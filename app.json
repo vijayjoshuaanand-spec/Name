@@ -4,37 +4,22 @@
     "slug": "tamil-verse-alarm",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#1a0e00"
-    },
-    "assetBundlePatterns": ["**/*"],
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#1a0e00"
-      },
       "package": "com.tamilversealarm.app",
+      "versionCode": 1,
       "permissions": [
-        "RECEIVE_BOOT_COMPLETED",
-        "VIBRATE",
-        "USE_EXACT_ALARM",
-        "SCHEDULE_EXACT_ALARM",
-        "WAKE_LOCK"
+        "android.permission.VIBRATE",
+        "android.permission.WAKE_LOCK",
+        "android.permission.RECEIVE_BOOT_COMPLETED"
       ]
     },
     "plugins": [
-      ["expo-notifications", {
-        "icon": "./assets/notification-icon.png",
-        "color": "#D4A017"
-      }]
+      ["expo-notifications", {"color": "#FFD700"}]
     ],
     "extra": {
       "eas": {
-        "projectId": "your-project-id-here"
+        "projectId": "dbe0c299-5500-4e9f-bbe6-1db23878487a"
       }
     }
   }
